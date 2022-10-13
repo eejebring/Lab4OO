@@ -1,11 +1,9 @@
 public class Board {
-    Position boardSize;
     Player[][] boardStates;
     RuleEngine judge;
     boolean boardFinished;
 
     Board(Position boardSize, RuleEngine judge) {
-        this.boardSize = boardSize;
         boardStates = new Player [boardSize.getX() + 1] [boardSize.getY() + 1];
         this.judge = judge;
         boardFinished = false;

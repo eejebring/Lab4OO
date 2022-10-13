@@ -18,10 +18,6 @@ public class Position implements Iterable{
         return Y;
     }
 
-    public boolean isGreaterOrEqualTo(Position otherPosition) {
-        return otherPosition.X <= X && otherPosition.Y <= Y;
-    }
-
     public boolean equals(Position otherPosition) {
         return X == otherPosition.X && Y == otherPosition.Y;
     }
@@ -29,7 +25,6 @@ public class Position implements Iterable{
     public Position add(Position otherPosition) {
         return new Position(X + otherPosition.X, Y + otherPosition.Y);
     }
-    public  Position sub(Position otherPosition) { return new Position(X - otherPosition.X, Y - otherPosition.Y); }
     public GridLayout toGridLayout () { return new GridLayout(Y+1,X+1); }
 
     @Override

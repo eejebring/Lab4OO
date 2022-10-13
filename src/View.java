@@ -57,7 +57,7 @@ public class View {
     }
     public void setAnnouncer(String message) {announcer.setText(message);}
     public void setJudgeWarning(String warning) {judgeWarning.setText(warning);}
-    public void setButtonStates(boolean state) {
+    public void setButtonsEnabled(boolean state) {
         for (JButton[] buttonRows : buttons) {
             for (JButton button : buttonRows) {
                 button.setEnabled(state);

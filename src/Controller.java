@@ -26,7 +26,7 @@ public class Controller {
 
             if (board.boardFinished) {
                 view.setAnnouncer(allPlayers[activePlayer].getName() + " wins the game!");
-                view.setButtonStates(false);
+                view.setButtonsEnabled(false);
                 return;
             }
 
